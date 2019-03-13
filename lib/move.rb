@@ -10,8 +10,10 @@ def input_to_index (str)
   num = (str.to_i) - 1
 end
 
-def move (board, pos, char = "X")
+def move (board, index, char = "X")
+  pos = input_to_index(index)
   board[pos] = char
+
 end
 
 
